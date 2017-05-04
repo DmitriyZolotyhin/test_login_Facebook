@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="1">
+
+        <parameter name="sUsername" value="testuser_1" />
+
+        <parameter name="sPassword" value="Test@123"/>
+
+    </test>
+
+    <test name="2">
+
+        <parameter name="sUsername" value="testuser_1"/>
+
+        <parameter name="sPassword" value="Test@123"/>
+
+    </test>
+
+    <test name="3">
+
+        <parameter name="sUsername" value="testuser_1"/>
+
+        <parameter name="sPassword" value="Test@123"/>
+
+    </test>
+
+
+
+
+</suite>
