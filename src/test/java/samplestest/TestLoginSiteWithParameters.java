@@ -65,7 +65,7 @@ public class TestLoginSiteWithParameters {
         }
         catch (NoSuchElementException e ) //| | NoSuchElementException
         {
-             // driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+              driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
         }
 

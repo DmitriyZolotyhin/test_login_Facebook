@@ -5,5 +5,5 @@
 *.ear
 
 # IntelliJ:
-.idea/
+
 *.iml
