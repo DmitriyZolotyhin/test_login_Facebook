@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="373666" started-at="2017-05-06T13:14:53Z" finished-at="2017-05-06T13:21:07Z">
+  <suite name="Surefire suite" duration-ms="369988" started-at="2017-05-06T17:49:55Z" finished-at="2017-05-06T17:56:05Z">
     <groups>
       <group name="test">
-        <method signature="TestLoginSiteWithParameters.test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="test1" class="samplestest.TestLoginSiteWithParameters"/>
+        <method signature="TestLoginSiteWithParameters.test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="test1" class="samplestest.TestLoginSiteWithParameters"/>
       </group> <!-- test -->
     </groups>
-    <test name="Surefire test" duration-ms="373666" started-at="2017-05-06T13:14:53Z" finished-at="2017-05-06T13:21:07Z">
+    <test name="Surefire test" duration-ms="369988" started-at="2017-05-06T17:49:55Z" finished-at="2017-05-06T17:56:05Z">
       <class name="samplestest.TestLoginSiteWithParameters">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="beforeMethod" is-config="true" duration-ms="10700" started-at="2017-05-06T16:14:53Z" finished-at="2017-05-06T16:15:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="beforeMethod" is-config="true" duration-ms="6587" started-at="2017-05-06T20:49:55Z" finished-at="2017-05-06T20:50:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="test1" duration-ms="14146" started-at="2017-05-06T16:15:04Z" data-provider="Authentication" finished-at="2017-05-06T16:15:18Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="test1" duration-ms="12944" started-at="2017-05-06T20:50:01Z" data-provider="Authentication" finished-at="2017-05-06T20:50:14Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-05-06T16:15:18Z" finished-at="2017-05-06T16:15:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-05-06T20:50:14Z" finished-at="2017-05-06T20:50:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="beforeMethod" is-config="true" duration-ms="4201" started-at="2017-05-06T16:15:18Z" finished-at="2017-05-06T16:15:22Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="beforeMethod" is-config="true" duration-ms="4606" started-at="2017-05-06T20:50:14Z" finished-at="2017-05-06T20:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="test1" duration-ms="164305" started-at="2017-05-06T16:15:22Z" data-provider="Authentication" finished-at="2017-05-06T16:18:07Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="test1" duration-ms="162819" started-at="2017-05-06T20:50:19Z" data-provider="Authentication" finished-at="2017-05-06T20:53:02Z">
           <params>
             <param index="0">
               <value>
@@ -50,15 +50,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-05-06T16:18:07Z" finished-at="2017-05-06T16:18:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="beforeMethod" is-config="true" duration-ms="4288" started-at="2017-05-06T16:18:07Z" finished-at="2017-05-06T16:18:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="beforeMethod" is-config="true" duration-ms="4653" started-at="2017-05-06T20:53:02Z" finished-at="2017-05-06T20:53:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="test1" duration-ms="174474" started-at="2017-05-06T16:18:11Z" data-provider="Authentication" finished-at="2017-05-06T16:21:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-05-06T20:53:02Z" finished-at="2017-05-06T20:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="test1" duration-ms="177050" started-at="2017-05-06T20:53:06Z" data-provider="Authentication" finished-at="2017-05-06T20:56:03Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@2e140e59]" name="afterMethod" is-config="true" duration-ms="1397" started-at="2017-05-06T16:21:05Z" finished-at="2017-05-06T16:21:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@1dbb650b]" name="afterMethod" is-config="true" duration-ms="1219" started-at="2017-05-06T20:56:03Z" finished-at="2017-05-06T20:56:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

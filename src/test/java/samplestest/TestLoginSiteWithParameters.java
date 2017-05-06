@@ -7,7 +7,9 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
 
+import javax.servlet.ServletException;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
@@ -52,19 +54,19 @@ public class TestLoginSiteWithParameters {
 
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
              Assert.assertEquals("https://www.facebook.com/login.php?login_attempt=1&lwv=110", "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
-
-
             driver.quit();
 
 
         }
-        catch (NoSuchElementException e ) //| | NoSuchElementException
+        catch (NoSuchElementException e )
         {
              // driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
         }
 
-    }
+
+
+        }
         @BeforeMethod
         public void beforeMethod ()
         {
