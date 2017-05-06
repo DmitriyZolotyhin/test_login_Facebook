@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1494076493675" stop="1494076867379" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Surefire suite : Surefire test</name>
+    <title>Surefire suite : Surefire test</title>
+    <test-cases>
+        <test-case start="1494076504547" stop="1494076518587" status="passed">
+            <name>test1[null,null]</name>
+            <steps>
+                <step start="1494076504788" stop="1494076518570" status="passed">
+                    <name>test1[null, null]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Administrator"/>
+                <label name="thread" value="4976@Administrator.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1494076522819" stop="1494076687124" status="passed">
+            <name>test1[zolotoy18.12.1988@gmail.com,123]</name>
+            <steps>
+                <step start="1494076522821" stop="1494076687123" status="passed">
+                    <name>test1[zolotoy18.12.1988@gmail.com, 123]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Administrator"/>
+                <label name="thread" value="4976@Administrator.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1494076691417" stop="1494076865890" status="passed">
+            <name>test1[zolotoy18.12.1988@gmail.com,samara]</name>
+            <steps>
+                <step start="1494076691419" stop="1494076865890" status="passed">
+                    <name>test1[zolotoy18.12.1988@gmail.com, samara]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="Administrator"/>
+                <label name="thread" value="4976@Administrator.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

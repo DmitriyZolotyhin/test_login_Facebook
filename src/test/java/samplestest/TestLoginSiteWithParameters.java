@@ -51,11 +51,6 @@ public class TestLoginSiteWithParameters {
         {
 
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-            //  WebElement searchFieldError3 = driver.findElement(By.xpath(".//*[@id='reg-link']"));
-            // String strng3 = searchFieldError3.getText();
-            //  Assert.assertEquals("Зарегистрируйтесь на Facebook", strng3);
-            //  driver.quit();
-            //driver.getCurrentUrl();
              Assert.assertEquals("https://www.facebook.com/login.php?login_attempt=1&lwv=110", "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
 
 
@@ -65,7 +60,7 @@ public class TestLoginSiteWithParameters {
         }
         catch (NoSuchElementException e ) //| | NoSuchElementException
         {
-              driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+             // driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
         }
 
