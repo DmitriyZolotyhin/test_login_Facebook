@@ -49,6 +49,7 @@ public class TestLoginSiteWithParameters {
 
 
             }
+
         catch (NoSuchWindowException e )   /*в скобках указывается класс конкретной ожидаемой ошибки.*/
         {
 
@@ -60,7 +61,7 @@ public class TestLoginSiteWithParameters {
         }
         catch (NoSuchElementException e )
         {
-             // driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+              driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
         }
 
@@ -68,6 +69,7 @@ public class TestLoginSiteWithParameters {
 
         }
         @BeforeMethod
+        @Step
         public void beforeMethod ()
         {
             try {
