@@ -5,6 +5,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import ru.yandex.qatools.allure.annotations.Step;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +29,7 @@ public class TestLoginSiteWithParameters {
     }
 
     @Test(groups = {"test"}, dataProvider = "Authentication")
-
+    @Step
     public void test1(String sUsername, String sPassword) {
         //здесь код, который потенциально может привести к ошибке
         try {
