@@ -1,26 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: samplestest.TestLoginSiteWithParameters
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 381.323 sec <<< FAILURE! - in samplestest.TestLoginSiteWithParameters
-test1(samplestest.TestLoginSiteWithParameters)  Time elapsed: 23.129 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == div._4rbf._53ij (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.34 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ie.useLegacyFileUploadDialogHandling=false, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:43972/, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, version=11, platform=WINDOWS, unexpectedAlertBehaviour=dismiss}]
-Session ID: 36266b6e-51db-4907-b11b-7ad168d3e672
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at samplestest.TestLoginSiteWithParameters.test1(TestLoginSiteWithParameters.java:64)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 369.752 sec - in samplestest.TestLoginSiteWithParameters

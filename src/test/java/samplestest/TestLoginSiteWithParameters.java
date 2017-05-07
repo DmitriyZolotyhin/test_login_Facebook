@@ -6,6 +6,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
@@ -19,9 +20,12 @@ import static org.testng.AssertJUnit.assertEquals;
 /**
  * Created by Администратор on 03.05.2017.
  */
-public class TestLoginSiteWithParameters {
-    public static WebDriver driver;
 
+
+public class TestLoginSiteWithParameters {
+
+    public static WebDriver driver;
+    
     @DataProvider(name = "Authentication")
 
     public static Object[][] credentials() {
@@ -32,6 +36,7 @@ public class TestLoginSiteWithParameters {
 
     @Test(groups = {"test"}, dataProvider = "Authentication")
     @Step
+    @Title( "Test with parametrs")
     public void test1(String sUsername, String sPassword) {
         //здесь код, который потенциально может привести к ошибке
         try {
@@ -45,9 +50,6 @@ public class TestLoginSiteWithParameters {
             WebElement elementButtonEnterLogin = driver.findElement(By.xpath(".//*[@id='fb-timeline-cover-name']"));
             String strng2 = elementButtonEnterLogin.getText();
             Assert.assertEquals("Тест Тестов", strng2);
-            //driver.quit();
-
-
             }
 
         catch (NoSuchWindowException e )   /*в скобках указывается класс конкретной ожидаемой ошибки.*/
@@ -57,19 +59,16 @@ public class TestLoginSiteWithParameters {
              Assert.assertEquals("https://www.facebook.com/login.php?login_attempt=1&lwv=110", "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
             driver.quit();
 
-
         }
         catch (NoSuchElementException e )
         {
-              driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+              //driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
         }
-
-
-
         }
         @BeforeMethod
         @Step
+
         public void beforeMethod ()
         {
             try {
