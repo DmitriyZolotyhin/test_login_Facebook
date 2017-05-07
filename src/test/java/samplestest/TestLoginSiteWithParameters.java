@@ -25,7 +25,7 @@ import static org.testng.AssertJUnit.assertEquals;
 public class TestLoginSiteWithParameters {
 
     public static WebDriver driver;
-    
+
     @DataProvider(name = "Authentication")
 
     public static Object[][] credentials() {
