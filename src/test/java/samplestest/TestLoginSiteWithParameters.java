@@ -56,7 +56,8 @@ public class TestLoginSiteWithParameters {
         {
 
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-             Assert.assertEquals("https://www.facebook.com/login.php?login_attempt=1&lwv=110", "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
+            String currentUrl = driver.getCurrentUrl();
+            Assert.assertEquals( currentUrl , "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
             driver.quit();
 
         }
@@ -64,7 +65,9 @@ public class TestLoginSiteWithParameters {
         {
               //driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
+
         }
+
         }
         @BeforeMethod
         @Step
