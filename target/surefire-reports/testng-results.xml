@@ -1,84 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="368097" started-at="2017-05-07T06:23:29Z" finished-at="2017-05-07T06:29:37Z">
+  <suite name="Surefire suite" duration-ms="47" started-at="2017-05-09T13:46:30Z" finished-at="2017-05-09T13:46:30Z">
     <groups>
-      <group name="test">
-        <method signature="TestLoginSiteWithParameters.test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="test1" class="samplestest.TestLoginSiteWithParameters"/>
-      </group> <!-- test -->
     </groups>
-    <test name="Surefire test" duration-ms="368097" started-at="2017-05-07T06:23:29Z" finished-at="2017-05-07T06:29:37Z">
-      <class name="samplestest.TestLoginSiteWithParameters">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="beforeMethod" is-config="true" duration-ms="7003" started-at="2017-05-07T09:23:29Z" finished-at="2017-05-07T09:23:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="test1" duration-ms="13397" started-at="2017-05-07T09:23:36Z" data-provider="Authentication" finished-at="2017-05-07T09:23:50Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-05-07T09:23:50Z" finished-at="2017-05-07T09:23:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="beforeMethod" is-config="true" duration-ms="4466" started-at="2017-05-07T09:23:50Z" finished-at="2017-05-07T09:23:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="test1" duration-ms="164408" started-at="2017-05-07T09:23:54Z" data-provider="Authentication" finished-at="2017-05-07T09:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zolotoy18.12.1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="beforeMethod" is-config="true" duration-ms="4481" started-at="2017-05-07T09:26:38Z" finished-at="2017-05-07T09:26:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-05-07T09:26:38Z" finished-at="2017-05-07T09:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="test1" duration-ms="172922" started-at="2017-05-07T09:26:43Z" data-provider="Authentication" finished-at="2017-05-07T09:29:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zolotoy18.12.1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[samara]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:samplestest.TestLoginSiteWithParameters@3ac04654]" name="afterMethod" is-config="true" duration-ms="1342" started-at="2017-05-07T09:29:36Z" finished-at="2017-05-07T09:29:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- samplestest.TestLoginSiteWithParameters -->
+    <test name="Surefire test" duration-ms="47" started-at="2017-05-09T13:46:30Z" finished-at="2017-05-09T13:46:30Z">
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

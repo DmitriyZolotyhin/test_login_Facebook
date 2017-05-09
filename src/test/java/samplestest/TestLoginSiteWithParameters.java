@@ -3,6 +3,7 @@ package samplestest;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -18,7 +19,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 
 /**
- * Created by Администратор on 03.05.2017.
+ * Created by Администратор on 07.05.2017.
  */
 
 
@@ -50,52 +51,52 @@ public class TestLoginSiteWithParameters {
             WebElement elementButtonEnterLogin = driver.findElement(By.xpath(".//*[@id='fb-timeline-cover-name']"));
             String strng2 = elementButtonEnterLogin.getText();
             Assert.assertEquals("Тест Тестов", strng2);
-            }
+        }
 
         catch (NoSuchWindowException e )   /*в скобках указывается класс конкретной ожидаемой ошибки.*/
         {
 
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-            String currentUrl = driver.getCurrentUrl();
-            Assert.assertEquals( currentUrl , "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
+            // String currentUrl = driver.getCurrentUrl();
+            // Assert.assertEquals( currentUrl , "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
             driver.quit();
 
         }
         catch (NoSuchElementException e )
         {
-              //driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+            //driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
 
-        }
-
-        }
-        @BeforeMethod
-        @Step
-
-        public void beforeMethod ()
-        {
-            try {
-                Runtime.getRuntime().exec("RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            System.setProperty("webdriver.ie.driver", "C:\\Driver\\IEDriverServer.exe");
-            driver = new InternetExplorerDriver();
-
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get("https://ru-ru.facebook.com/");
-            driver.manage().window().maximize();
-
-        }
-        @AfterMethod
-        public void afterMethod ()
-        {
-            driver.quit();
         }
 
     }
+    @BeforeMethod
+    @Step
 
+    public void beforeMethod ()
+    {
+        try {
+            Runtime.getRuntime().exec("RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.setProperty("webdriver.ie.driver", "C:\\Driver\\IEDriverServer.exe");
+        //driver = new InternetExplorerDriver();
+        DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
+        ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+        driver = new InternetExplorerDriver(ieCapabilities);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://ru-ru.facebook.com/");
+        driver.manage().window().maximize();
+
+    }
+    @AfterMethod
+    public void afterMethod ()
+    {
+        driver.quit();
+    }
+
+}
 
 
 
