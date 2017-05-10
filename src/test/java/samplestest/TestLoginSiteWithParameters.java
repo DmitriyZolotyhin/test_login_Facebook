@@ -57,14 +57,14 @@ public class TestLoginSiteWithParameters {
         {
 
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-            // String currentUrl = driver.getCurrentUrl();
-            // Assert.assertEquals( currentUrl , "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
+             String currentUrl = driver.getCurrentUrl();
+             Assert.assertEquals( currentUrl , "https://www.facebook.com/login.php?login_attempt=1&lwv=110");
             driver.quit();
 
         }
         catch (NoSuchElementException e )
         {
-            //driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
+           // driver.findElement(By.cssSelector("div._4rbf._53ij")).getText().matches("^exact:Вы ввели неверный пароль\\. Забыли пароль[\\s\\S]$");
             driver.quit();
 
         }
@@ -75,13 +75,13 @@ public class TestLoginSiteWithParameters {
 
     public void beforeMethod ()
     {
+        RunTestWithConnection.testInet1();
         try {
             Runtime.getRuntime().exec("RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
         } catch (IOException e) {
             e.printStackTrace();
         }
         System.setProperty("webdriver.ie.driver", "C:\\Driver\\IEDriverServer.exe");
-        //driver = new InternetExplorerDriver();
         DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
         ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         driver = new InternetExplorerDriver(ieCapabilities);
@@ -97,8 +97,6 @@ public class TestLoginSiteWithParameters {
     }
 
 }
-
-
 
 
 
