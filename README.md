@@ -10,5 +10,5 @@
 
 Отчеты Allure.xml после запуска теста лежат в папке target/allure-result
 
-Отчет Allure.html после запуска теста лежит в папке target/site (Открывать отчет с помощью браузера Mozilla Firefox)
+Отчет Allure.html после запуска теста лежит в папке target/site 
 
